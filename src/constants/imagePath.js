@@ -1,0 +1,22 @@
+export default {
+ Home:require("../assets/images/home.png"),
+ Library:require("../assets/images/library.png"),
+ Audio:require("../assets/images/audio.png"),
+ Bookmark:require("../assets/images/bookmark.png"),
+ Profile:require("../assets/images/profile.png"),
+ Drawer:require("../assets/images/drawer.png"),
+ Search:require("../assets/images/search.png"),
+ Share:require("../assets/images/share.png"),
+ FeedBack:require("../assets/images/feedback.png"),
+ Play:require("../assets/images/play.png"),
+ Pause:require("../assets/images/pause.png"),
+ Next:require("../assets/images/next.png"),
+ Pervious:require("../assets/images/previous.png"),
+ like:require("../assets/images/like.png"),
+ volume_up:require("../assets/images/volume_up.png"),
+ volume_down:require("../assets/images/volume_down.png"),
+ repeat:require("../assets/images/repeat.png"),
+ bookmark:require("../assets/images/bookmark.png"),
+ loacl_folder:require("../assets/images/local_folder.png"),
+ 
+};

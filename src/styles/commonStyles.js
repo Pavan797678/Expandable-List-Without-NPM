@@ -44,13 +44,13 @@ export default StyleSheet.create({
   futuraBtHeavyFont16:{
     fontSize:textScale(16),
     color:colors.black,
-    fontFamily:fontFamily.futuraBtHeavy
+    fontFamily:fontFamily.bold
     
   },
   futuraBtHeavyFont14:{
     fontSize:textScale(14),
     color:colors.black,
-    fontFamily:fontFamily.futuraBtHeavy
+    fontFamily:fontFamily.mediumFont14Normal
     
   },
   futuraBtHeavyFont25:{

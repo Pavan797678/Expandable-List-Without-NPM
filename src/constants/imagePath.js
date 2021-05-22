@@ -18,5 +18,10 @@ export default {
  repeat:require("../assets/images/repeat.png"),
  bookmark:require("../assets/images/bookmark.png"),
  loacl_folder:require("../assets/images/local_folder.png"),
+ edit:require("../assets/images/edit.png"),
+ calender:require("../assets/images/calender.png"),
+ add:require("../assets/images/add.png"),
+ remove:require("../assets/images/remove.png"),
+ bill:require("../assets/images/bill.png"),
  
 };

@@ -1,5 +1,5 @@
 export default {
-  themeColor: '#45c9cb',
+  themeColor: 'black',
   btnABlue: '#306F94',
   btnBBlue: '#32A3E0',
   textBlue:"#1A76CA",
@@ -31,6 +31,7 @@ export default {
   red:"red",
   borderTopColor:"#f4f4f4",
   grey:"grey",
+  lightGray:"#95A5A6",
 
 
 };

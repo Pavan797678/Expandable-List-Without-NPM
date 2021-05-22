@@ -5,8 +5,9 @@ import WrapperContainer from '../../Components/WrapperContainer'
 import colors from '../../styles/colors'
 import MusicFiles,{Constants} from 'react-native-get-music-files-v3dev-test';
 
-import BookListLayoutCell from '../../Components/BookListLayoutCell'
+
 import LocalStorageSongsLayoutCell from '../../Components/LocalStorageSongsLayoutCell'
+import { moderateVerticalScale } from '../../styles/responsiveSize'
 
 
 

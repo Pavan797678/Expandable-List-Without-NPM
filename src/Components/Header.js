@@ -12,7 +12,7 @@ import fontFamily from '../styles/fontFamily';
 import commonStyles from '../styles/commonStyles';
 
 export default function Header({
-  title=strings.MYBOOK
+  title=strings.BILLBOOK
 }) {
   const navigation = useNavigation();
   
@@ -44,14 +44,14 @@ const styles = StyleSheet.create({
    },drawerIcon:{
      height:moderateVerticalScale(35),
      width:moderateVerticalScale(35),
-     tintColor:colors.black
+     tintColor:colors.themeColor
    },titleText:{
     ...commonStyles.futuraBtHeavyFont25,
     fontFamily:fontFamily.bold,
    },searchIcon:{
     height:moderateVerticalScale(25),
     width:moderateVerticalScale(25),
-    tintColor:colors.black
+    tintColor:colors.themeColor
    }
 })
 

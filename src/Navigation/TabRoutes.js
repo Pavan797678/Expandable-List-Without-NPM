@@ -18,14 +18,14 @@ export default function TabRoutes() {
         name={navigationStrings.HOME}
         component={Home}
         options={{
-          tabBarLabel: 'HOME',
+          tabBarLabel: 'BILLING',
           tabBarIcon: ({focused, color, size}) => (
             <Image
-              source={imagePath.Home}
+              source={imagePath.bill}
               style={{
                 width: size,
                 height: size,
-                tintColor: focused ? colors.black :"",
+                tintColor: focused ? colors.themeColor :colors.lightGray,
               }}
             />
           ),
@@ -42,7 +42,7 @@ export default function TabRoutes() {
               style={{
                 width: size,
                 height: size,
-                tintColor: focused ? colors.black : '',
+                tintColor: focused ? colors.themeColor : '',
               }}
             />
           ),
@@ -61,7 +61,7 @@ export default function TabRoutes() {
               style={{
                 width: size,
                 height: size,
-                tintColor: focused ? colors.black : '',
+                tintColor: focused ? colors.themeColor : '',
               }}
             />
           ),
@@ -80,7 +80,7 @@ export default function TabRoutes() {
               style={{
                 width: size,
                 height: size,
-                tintColor: focused ? colors.black : '',
+                tintColor: focused ? colors.themeColor : '',
               }}
             />
           ),
@@ -99,7 +99,7 @@ export default function TabRoutes() {
               style={{
                 width: size,
                 height: size,
-                tintColor: focused ? colors.black : '',
+                tintColor: focused ? colors.themeColor : '',
               }}
             />
           ),

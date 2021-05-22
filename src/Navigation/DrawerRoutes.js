@@ -9,6 +9,7 @@ import DrawerContent from '../Components/DrawerContent';
 
 import {createStackNavigator} from '@react-navigation/stack';
 import TabRoutes from './TabRoutes';
+import { BillScreen } from '../Screens';
 
 
 
@@ -22,6 +23,10 @@ export default function DrawerRoutes() {
       <Drawer.Screen
           name={navigationStrings.TAB_ROUTES}
           component={TabRoutes}
+        />    
+          <Drawer.Screen
+          name={navigationStrings.BILLSCREEN}
+          component={BillScreen}
         />        
       </Drawer.Navigator>
     </>

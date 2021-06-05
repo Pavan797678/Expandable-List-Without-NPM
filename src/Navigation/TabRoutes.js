@@ -3,91 +3,36 @@ import {Text, View, Image} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import navigationStrings from '../constants/navigationStrings';
-import {Audio, Bookmark, Home, Library, Profile} from '../Screens';
+import {Order, Profile} from '../Screens';
 import imagePath from '../constants/imagePath';
 import colors from '../styles/colors';
+
 
 const Tab = createBottomTabNavigator();
 
 export default function TabRoutes() {
   return (
     <Tab.Navigator tabBarOptions={{
-      activeTintColor:colors.black,
+      activeTintColor:'black',
     }}>
       <Tab.Screen
-        name={navigationStrings.HOME}
-        component={Home}
+        name={navigationStrings.ORDER}
+        component={Order}
         options={{
-          tabBarLabel: 'BILLING',
+          tabBarLabel: 'Order',
           tabBarIcon: ({focused, color, size}) => (
             <Image
-              source={imagePath.bill}
+              source={imagePath.ORDERBEG}
               style={{
                 width: size,
                 height: size,
-                tintColor: focused ? colors.themeColor :colors.lightGray,
+                tintColor: focused ? "black":'',
               }}
             />
           ),
         }}
       />
-      <Tab.Screen
-        name={navigationStrings.LIBRARY}
-        component={Library}
-        options={{
-          tabBarLabel: 'LIBRARY',
-          tabBarIcon: ({focused, color, size}) => (
-            <Image
-              source={imagePath.Library}
-              style={{
-                width: size,
-                height: size,
-                tintColor: focused ? colors.themeColor : '',
-              }}
-            />
-          ),
-        }}
-      />
-
-      <Tab.Screen
-        name={navigationStrings.AUDIO}
-        component={Audio}
-        options={{
-          tabBarLabel: 'AUDIO',
-
-          tabBarIcon: ({focused, color, size}) => (
-            <Image
-              source={imagePath.Audio}
-              style={{
-                width: size,
-                height: size,
-                tintColor: focused ? colors.themeColor : '',
-              }}
-            />
-          ),
-        }}
-      />
-
-      <Tab.Screen
-        name={navigationStrings.BOOKMARK}
-        component={Bookmark}
-        options={{
-          tabBarLabel: 'BOOKMARK',
-
-          tabBarIcon: ({focused, color, size}) => (
-            <Image
-              source={imagePath.Bookmark}
-              style={{
-                width: size,
-                height: size,
-                tintColor: focused ? colors.themeColor : '',
-              }}
-            />
-          ),
-        }}
-      />
-
-      <Tab.Screen
+          <Tab.Screen
         name={navigationStrings.PROFILE}
         component={Profile}
         options={{
@@ -95,11 +40,11 @@ export default function TabRoutes() {
 
           tabBarIcon: ({focused, color, size}) => (
             <Image
-              source={imagePath.Profile}
+              source={imagePath.PROFILE}
               style={{
                 width: size,
                 height: size,
-                tintColor: focused ? colors.themeColor : '',
+                tintColor: focused ? "black" : '',
               }}
             />
           ),

@@ -12,6 +12,8 @@ target 'MyBook' do
     :hermes_enabled => false
   )
 
+  pod 'RNWalkCounter', :path => '../node_modules/react-native-walk-counter'
+
   target 'MyBookTests' do
     inherit! :complete
     # Pods for testing

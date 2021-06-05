@@ -6,14 +6,10 @@ import {
   StyleSheet,
   TouchableOpacity,
 } from 'react-native';
-import {
-  moderateScale,
-  moderateVerticalScale,
-  textScale,
-} from '../styles/responsiveSize';
 import colors from '../styles/colors';
-import commonStyles, {hitSlopProp} from '../styles/commonStyles';
-import fontFamily from '../styles/fontFamily';
+
+
+
 
 const TextInputWithLabel = ({
   label,
@@ -23,48 +19,43 @@ const TextInputWithLabel = ({
   secureTextEntry = false,
   rightIcon,
   customTextStyle = {},
-  placeholder = '',
+  placeholder="",
   onPress = () => {},
   onPressRightIcon = () => {},
   ...rest
 }) => {
-  let currentColor = active ? colors.themeColor : colors.textGrey;
+  let currentColor = active ? 'black' : '';
   return (
-    <View style={styles.container}>
+    <View style={{marginBottom:15}}>
       <Text
         style={{
-          ...commonStyles.fontSize14,
+          fontSize:14,
           color: currentColor,
-          marginBottom: moderateVerticalScale(7),
+          marginBottom: 7,
         }}>
         {label}
       </Text>
-      <View style={styles.textInputContainer}>
+      <View>
         <TextInput
-        selectionColor={colors.themeColor}
           {...rest}
           placeholder={placeholder}
           secureTextEntry={secureTextEntry}
+          selectionColor={colors.black}
           // onFocus={onFocus}
           style={{
-            width: '100%',
+           width:300,
             ...styles.textInput,
             borderColor: currentColor,
             ...customTextStyle,
-            borderRadius:5
           }}
           onChangeText={onChangeText}
           value={value}
         />
         {!!rightIcon && (
           <TouchableOpacity
-            hitSlop={hitSlopProp}
+            
             onPress={onPressRightIcon}
-            style={{
-              alignItems: 'center',
-              justifyContent: 'center',
-              marginLeft: 6,
-            }}>
+            style={{alignItems: 'center', justifyContent: 'center',marginLeft:6}}>
             <Image source={rightIcon} />
           </TouchableOpacity>
         )}
@@ -76,21 +67,13 @@ const TextInputWithLabel = ({
 export default TextInputWithLabel;
 
 const styles = StyleSheet.create({
-  container: {
-    marginBottom: moderateVerticalScale(15),
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
   textInput: {
     borderWidth: 1,
-    borderColor: colors.themeMain,
-    height: moderateVerticalScale(39),
-    fontSize: moderateVerticalScale(17.5),
-    fontFamily: fontFamily.regular,
-    paddingVertical: 0,
-    paddingHorizontal: moderateVerticalScale(16),
+    borderColor: 'black',
+    height: 49,
+    fontSize: 17.5,
+       paddingVertical: 0,
+    paddingHorizontal: 16,
     textAlignVertical: 'center',
   },
-  textInputContainer: {width: '68%'},
 });

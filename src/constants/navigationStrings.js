@@ -1,12 +1,13 @@
 export default {
-  HOME: 'home',
-  TAB_ROUTES:'tabRoutes',
-  LIBRARY:"library",
-  AUDIO:"audio",
-  BOOKMARK:"BOOKMARK",
+  LOGIN:'login',
+  REGISTER:'register',
+  ORDER: 'order',
   PROFILE:"profile",
-  DRAWER_ROUTES:'drawerRoutes',
-  BILLSCREEN:'billScreen',
+  TAB_ROUTES:"tabRoutes",
+  CART_SCREEN:"cartscreen",
+  FITNESS_SCREEN:"fitnessScreen"
+  
+ 
   
  
  

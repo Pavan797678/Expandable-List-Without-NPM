@@ -1,8 +1,7 @@
-export {default as Home} from '../Screens/Home/Home';
-export {default as Library} from '../Screens/Library/Library';
-export {default as Audio} from '../Screens/Audio/Audio';
-export {default as Bookmark} from '../Screens/Bookmark/Bookmark';
-export {default as Profile} from '../Screens/Profile/Profile';
-export {default as BillScreen} from '../Screens/BillScreen/BillScreen';
-
+export {default as Login} from './Login/Login';
+export {default as Register} from './Register/Register';
+export {default as Order} from './CustomerScreens/Order/Order';
+export {default as Profile} from './CustomerScreens/Profile/Profile';
+export {default as Cart} from './CustomerScreens/CartScreen/CartScreen';
+export {default as FitnessScreen} from './CustomerScreens/FitnessScreen/FitnessScreen';
 

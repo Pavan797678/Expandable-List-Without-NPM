@@ -1,5 +1,5 @@
 export default {
-  themeColor: 'black',
+  themeColor: '#000000',
   btnABlue: '#306F94',
   btnBBlue: '#32A3E0',
   textBlue:"#1A76CA",
@@ -28,10 +28,7 @@ export default {
   whiteOpacity77:"rgba(255,255,255,0.77)",
   lightGreyBg:"#e8e8e8",
   buttonTextColor:"#36b6b0",
-  red:"red",
-  borderTopColor:"#f4f4f4",
-  grey:"grey",
-  lightGray:"#95A5A6",
+  red:"red"
 
 
 };
